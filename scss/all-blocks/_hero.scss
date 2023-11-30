@@ -1,0 +1,18 @@
+.hero{
+    height: 500px;
+    background-image: url(/assets/image/hero--bg-image.svg);
+    margin-top: 38px;
+    position: relative;
+}
+
+.slayder--left{
+    position: absolute;
+    top: 50%;
+    left: 20px;
+}
+
+.slayder--right{
+    position: absolute;
+    top: 50%;
+    right: 20px;
+}

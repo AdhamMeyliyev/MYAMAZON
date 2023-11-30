@@ -1,0 +1,97 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="../css/main.css")
+        //- script(defer href="../script.js")
+        title Document
+    body 
+        header.header 
+            .container 
+                ol.header__list 
+                    li.header__list__item 
+                        a(href="#").header__link
+                            img(src="../assets/logo/myamazon logo.svg", alt="logo") 
+                    li.header__list__item  
+                        a(href="#").header__link.header__location
+                            img(src="../assets/icon/Location Icon@2x.svg", alt="location").location__icon
+                            p Deliver to #[br] #[span.header__location__span Pakistan ]
+                    form.header__form
+                         p.header__input--before All
+                            img(src="../assets/icon/Dropdown icon@2x.svg", alt="icon").dropdown__icon_1
+
+                         input(type="text" placeholder="").header__input
+                         img(src="../assets/icon/Search Icon.svg", alt="search").search__icon.hamburger 
+
+                    li.header__list__item
+                        a(href="#").header__link.language__icon  
+                            img(src="../assets/icon/united-states 1@2x.svg", alt="icon")
+                            img(src="../assets/icon/Dropdown icon@2x.svg", alt="icon").dropdown__icon
+
+                    li.header__list__item  
+                        a(href="#").header__link.header__dropdown_1
+                            p Hello, Sign in #[br] #[span.header__dropdown_1__span Account & Lists] 
+                            img(src="../assets/icon/Dropdown icon@2x.svg", alt="icon").dropdown__icon_2 
+
+                    li.header__list__item  
+                        a(href="#").header__link
+                            p Returns #[br] #[span.header__dropdown_1__span & Orders] 
+
+                    li.header__list__item 
+                        a(href="#").header__link.header__karzinka
+                            img(src="../assets/icon/karzinka_icon.svg", alt="karzina") 
+                            p.karzinka__desc #[span.header__karzinka__span Cart]
+
+            nav.nav 
+                .container 
+                    ol.header__nav__list 
+                        li.header__nav__list__item
+                            a(href="#").header__nav__list__link.navbar 
+                                img(src="../assets/icon/Navbar.svg", alt="nav")
+                                p All
+
+                        li.header__nav__list__item  
+                            a(href="#").header__nav__list__link Today's Deals
+
+                        li.header__nav__list__item  
+                            a(href="#").header__nav__list__link Customer Service
+                                 
+
+                        li.header__nav__list__item  
+                            a(href="#").header__nav__list__link Registry 
+                                 
+
+                        li.header__nav__list__item  
+                            a(href="#").header__nav__list__link Gift Cards
+                                
+
+                        li.header__nav__list__item  
+                            a(href="#").header__nav__list__link Sell
+
+        section.hero 
+            a(href="#")
+                img(src="../assets/icon/Previous icon.svg", alt="slayder-left").slayder--left 
+            a(href="#")
+                img(src="../assets/icon/Vector (1).svg", alt="slayder-right").slayder--right
+
+            .carts 
+                .container 
+                    ul.carts__list 
+                        li.carts__list__item 
+                            a(href="#").carts__list__link
+                                h3.carts__h3 Gaming Accessories
+                                img(src="../assets/image/carts__img1.png", alt="cart").carts__img 
+                                p.carts__desc Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, ...
+                                ins.carts__ins_1 $ 40.00
+                                ins.carts__ins_2 $ 55.50
+                            
+                            .cart--bottom 
+                                .stars 
+                                    img(src="../assets/icon/bi_star-fill.svg", alt="star")
+                                    img(src="../assets/icon/bi_star-fill.svg", alt="star")
+                                    img(src="../assets/icon/bi_star-fill.svg", alt="star")
+                                    img(src="../assets/icon/bi_star-fill.svg", alt="star")
+                                    img(src="../assets/icon/bi_star-fill.svg", alt="star")
+                                p (192)
+                                a(href="#") See More

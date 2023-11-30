@@ -1,0 +1,22 @@
+.nav{
+    height: 40px;
+    background-color: #283D56;
+    .container{
+        padding-top: 10px;
+        .header__nav__list {
+            @include row;
+            gap: 20px;
+
+            .navbar{
+                @include row;
+                gap: 4.8px;
+                font-weight: bold;
+            }
+
+            .header__nav__list__link{
+                font-size: 16px;
+
+            }
+        }
+    }
+}

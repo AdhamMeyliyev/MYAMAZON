@@ -1,0 +1,170 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+body {
+  background-color: red;
+}
+
+.container {
+  width: 1400px;
+  margin: 0 auto;
+}
+
+button {
+  display: flex;
+  align-self: start;
+}
+
+.header {
+  background-color: black;
+  height: 80px;
+}
+.header .container {
+  padding-top: 7px;
+}
+.header .container .header__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header .container .header__list .header__location {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin-left: -15px;
+  margin-right: 10px;
+}
+.header .container .header__list .header__input {
+  width: 502px;
+  height: 40px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  line-height: 24px;
+  /* font-weight: bold; */
+}
+.header .container .header__list .header__input[placeholder] {
+  padding-left: 10px;
+}
+.header .container .header__list .search__icon {
+  width: 10px;
+  height: 10px;
+}
+.header .container .header__list .header__form {
+  position: relative;
+}
+.header .container .header__list .search__icon {
+  position: absolute;
+  width: 45px;
+  height: 40px;
+  background-color: #F79B34;
+  padding-top: 7px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  cursor: pointer;
+}
+.header .container .header__list .header__input--before {
+  position: absolute;
+  left: -41px;
+  width: 45px;
+  height: 40px;
+  background-color: #E8E5E5;
+  padding-top: 2px;
+  padding-left: 5px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.header .container .header__list .language__icon {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.header .container .header__list .dropdown__icon {
+  margin-top: 10px;
+}
+.header .container .header__list .header__dropdown_1 {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.header .container .header__list .dropdown__icon_2 {
+  margin-top: 20px;
+}
+.header .container .header__list .location__icon {
+  margin-top: 9px;
+}
+.header .container .header__list .header__karzinka {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+.header .container .header__list .header__karzinka .karzinka__desc {
+  margin-top: 10px;
+}
+
+.header__location__span, .header__dropdown_1__span, .header__karzinka__span {
+  font-weight: bold;
+  font-size: 19px;
+}
+
+.language__icon {
+  margin-left: 20px;
+}
+
+.hero {
+  height: 500px;
+  background-image: url(/assets/image/hero--bg-image.svg);
+  margin-top: 38px;
+  position: relative;
+}
+
+.slayder--left {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+}
+
+.slayder--right {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+}
+
+.nav {
+  height: 40px;
+  background-color: #283D56;
+}
+.nav .container {
+  padding-top: 10px;
+}
+.nav .container .header__nav__list {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.nav .container .header__nav__list .navbar {
+  display: flex;
+  align-items: center;
+  gap: 4.8px;
+  font-weight: bold;
+}
+.nav .container .header__nav__list .header__nav__list__link {
+  font-size: 16px;
+}/*# sourceMappingURL=main.css.map */

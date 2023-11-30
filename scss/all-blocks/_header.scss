@@ -1,0 +1,117 @@
+@mixin row{
+    display: flex;
+    align-items:center;
+}
+
+
+.header{
+    background-color: black;
+    height: 80px;
+    
+    .container{
+        padding-top: 7px;
+        .header__list{
+            @include row;
+            justify-content: space-between;
+
+            .header__location{
+                @include row;
+                gap: 9px;
+                margin-left: -15px;
+                margin-right: 10px;
+            }
+
+            .header__input{
+                width: 502px;
+                height: 40px;
+                border:none;
+                outline: none;
+                font-size: 16px;
+                line-height: 24px;
+                /* font-weight: bold; */
+            }
+
+            .header__input[placeholder]{
+                padding-left: 10px;
+            }
+
+            .search__icon{
+                width: 10px;
+                height: 10px;
+            }
+
+            .header__form{
+                position: relative;
+            }
+
+            .search__icon {
+                position: absolute;
+                width: 45px;
+                height: 40px;
+                background-color: #F79B34;
+                padding-top: 7px;
+                border-top-right-radius: 5px;
+                border-bottom-right-radius: 5px;
+                cursor: pointer;
+            }
+
+            .header__input--before{
+                position: absolute;
+                left: -41px;
+                width: 45px;
+                height: 40px;
+                background-color: #E8E5E5;
+                padding-top: 2px;
+                padding-left: 5px;
+                border-top-left-radius: 5px;
+                border-bottom-left-radius: 5px;
+                @include row;
+                gap: 5px;
+            }
+
+            .language__icon{
+                @include row;
+                gap: 5px;
+            }
+
+            .dropdown__icon{
+                margin-top: 10px;
+            }
+
+            .header__dropdown_1{
+                @include row;
+                gap: 5px;
+            }
+
+            .dropdown__icon_2{
+                margin-top: 20px;
+            }
+
+            .location__icon{
+                margin-top: 9px;
+            }
+
+            .header__karzinka{
+                @include row;
+                gap: 2px;
+
+                .karzinka__desc{
+                    margin-top: 10px;
+                }
+            }
+
+
+        }
+    }
+}
+
+
+.header__location__span, .header__dropdown_1__span,.header__karzinka__span{
+    font-weight: bold;
+    font-size: 19px;
+}
+
+.language__icon  {
+    margin-left: 20px;
+}
+
