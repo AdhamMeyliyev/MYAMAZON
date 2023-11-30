@@ -1,11 +1,7 @@
-/* let elHamburgerBtn = document.querySelector(".hamburger");
-let elCloseBtn = document.querySelector(".close");
-let elList = document.querySelector(".header__list1");
+// let elHamburgerBtn = document.querySelector(".next__slayder__right");
+// let elCloseBtn = document.querySelector(".compyuter__imgs");
 
-elHamburgerBtn.addEventListener("click", () =>{
-    elList.style.display ="block";
-})
+// elHamburgerBtn.addEventListener("click", () =>{
+//     elCloseBtn.style.display ="scroll";
+// })
 
-elCloseBtn.addEventListener("click", () =>{
-    elList.style.display ="none";
-}) */
