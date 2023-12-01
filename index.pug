@@ -3,9 +3,11 @@ html(lang="en")
     head
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        //- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        //- <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
         link(rel="stylesheet", href="../css/main.css")
         script(defer href="../script.js")
-        title Document
+        title MYAMAZON
     body 
         header.header 
             .container 
@@ -28,11 +30,44 @@ html(lang="en")
                         a(href="#").header__link.language__icon  
                             img(src="../assets/icon/united-states 1@2x.svg", alt="icon")
                             img(src="../assets/icon/Dropdown icon@2x.svg", alt="icon").dropdown__icon
+                
+                    //- li.header__list__item  
+                    //-     a(href="#").header__link.header__dropdown_1
+                    //-         p Hello, Sign in #[br] #[span.header__dropdown_1__span Account & Lists] 
+                    //-         img(src="../assets/icon/Dropdown icon@2x.svg", alt="icon").dropdown__icon_2 
 
-                    li.header__list__item  
-                        a(href="#").header__link.header__dropdown_1
-                            p Hello, Sign in #[br] #[span.header__dropdown_1__span Account & Lists] 
-                            img(src="../assets/icon/Dropdown icon@2x.svg", alt="icon").dropdown__icon_2 
+                    ul 
+                        li.dropdown
+                            a(href="javascript:void(0)").dropbtn.header__link.header__dropdown_1 Hello, Sign in #[br] #[span.header__dropdown_1__span Account & Lists]
+                                img(src="../assets/icon/Dropdown icon@2x.svg", alt="icon").dropdown__icon_2
+                            .dropdown-content
+                                .dropdown__main
+                                    a(href="#").dropdown__head 
+                                        img(src="../assets/icon/Profile Icon.svg", alt="icon").dropdown__head__icon
+                                        p.dropdown__head__desc Hello, Sign in 
+                                    a(href="#").dropdown__heading Digital Content & Devices
+                                    a(href="#").dropdown__link__hover MyAmazon Music   >
+                                    a(href="#").dropdown__link__hover Kindle E-readers & Books   >
+                                    a(href="#").dropdown__link__hover Appstore & Android   >
+                                    hr
+                                    a(href="#").dropdown__heading Shop by Department
+                                    a(href="#").dropdown__link__hover Gift Cards  >
+                                    a(href="#").dropdown__link__hover Computers   >
+                                    a(href="#").dropdown__link__hover Smart Home  >
+                                    a(href="#").dropdown__link__hover Arts & Crafts   >
+                                    a(href="#").dropdown__link__hover See All  >
+                                    hr
+                                    a(href="#").dropdown__heading Programs & Features
+                                    a(href="#").dropdown__link__hover MGift Cards  >
+                                    a(href="#").dropdown__link__hover #FoundItOnMyAmazon
+                                    a(href="#").dropdown__link__hover MyAmazon Live   >
+                                    a(href="#").dropdown__link__hover International Shopping  >
+                                    a(href="#").dropdown__link__hover MyAmazon Second Chance
+                                    a(href="#").dropdown__link__hover See Less   >
+                                    hr
+
+
+
 
                     li.header__list__item  
                         a(href="#").header__link
@@ -550,11 +585,82 @@ html(lang="en")
 
         section.sign
             .container 
-                .sign__main 
-                    p.sign__desc1 See personalized recommendations
-                    button.sign__btn Sign in
-                    p.sign__desc2 New customer? #[span.sign__span Start here.]  
+                p.sign__desc1 See personalized recommendations
+                button.sign__btn Sign in
+                p.sign__desc2 New customer? #[span.sign__span Start here.]  
 
+        footer.footer 
+            .footer__top 
+                p.footer__top__desc1 Back to top
+
+            .footer__main 
+                ol.footer__main__list 
+                    li.footer__main__list__item
+                        h3.footer__main__h3 Get to Know Us
+                        p Careers
+                        p Blog
+                        p About MyAmazon
+                        p Investor Relations
+                        p MyAmazon Devices
+                        p MyAmazon Science
+
+                    li.footer__main__list__item 
+                        h3.footer__main__h3 Make Money with Us
+                        p Sell products on MyAmazon
+                        p Sell on MyAmazon Business
+                        p Sell apps on MyAmazon
+                        p Become an Affiliate 
+                        p Advertise Your Products
+                        p Self-Publish with Us
+                        p Host an MyAmazon Hub
+                        p See More Make Money with Us
+
+                    li.footer__main__list__item 
+                        h3.footer__main__h3 MyAmazon Payment Products
+                        p MyAmazon Business Card
+                        p Shop with Points
+                        p Reload Your Balance
+                        p MyAmazon Currency Converter
+
+                    li.footer__main__list__item 
+                        h3.footer__main__h3 Let Us Help You
+                        p MyAmazon and COVID-19
+                        p Your Account
+                        p Your Orders
+                        p Shipping Rates & Policies
+                        p Returns & Replacements
+                        p Manage Your Content and Devices
+                        p MyAmazon Assistant
+                        p Help
+
+            .footer--bottom
+                ul.footer--bottom__list 
+                    li.footer--bottom__list__item_1
+                       a(href="#")
+                            img(src="../assets/logo/myamazon logo (1).svg", alt="foooter-logo") 
+                    li.footer--bottom__list__item_2 
+                        img(src="../assets/icon/globe icon.svg", alt="globus").footer--bottom__icon2
+                        p.footer--bottom__desc1 English
+                        img(src="../assets/icon/Dropdown Icon.png", alt="icon")
+
+                    li.footer--bottom__list__item_3 #[span.footer--bottom__span $]    USD - U.S. Dollar
+                    li.footer--bottom__list__item_4 
+                        img(src="../assets/icon/united-states 1@2x.svg", alt="icon")
+                        p United States
+
+            .footer__hr 
+
+            ul.footer--end__list 
+                li.footer--end__list__item Conditions of Use
+                li.footer--end__list__item Privacy Notice
+                li.footer--end__list__item Interest-Based Ads
+                li.footer--end__list__item © 1996-2022, Amazon.com, Inc. or its affiliates
+                        
+            
+
+
+
+    
         
 
                         

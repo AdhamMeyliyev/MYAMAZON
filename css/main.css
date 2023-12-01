@@ -29,6 +29,114 @@ button {
   align-self: start;
 }
 
+.footer {
+  background-color: #232f3e;
+  height: 665px;
+}
+
+.footer__top {
+  height: 50px;
+  background-color: #283D56;
+}
+.footer__top .footer__top__desc1 {
+  text-align: center;
+  font-size: 15px;
+  color: #fff;
+  padding-top: 20px;
+}
+
+.footer__main__list {
+  display: flex;
+  margin-left: 220px;
+  gap: 101px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.footer__main__list__item {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.7882352941);
+}
+
+.footer__main__h3 {
+  font-size: 18px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.footer--bottom__list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-left: 420px;
+}
+
+.footer--bottom__list__item_2 {
+  width: 116px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: 2px solid #fff;
+  font-size: 15px;
+  color: #fff;
+  cursor: pointer;
+}
+.footer--bottom__list__item_2 .footer--bottom__icon2 {
+  margin-left: 10px;
+}
+.footer--bottom__list__item_2 .footer--bottom__desc1 {
+  margin-right: 10px;
+}
+
+.footer--bottom__list__item_3 {
+  padding: 8px 25px;
+  border: 2px solid #fff;
+  color: #fff;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.footer--bottom__span {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.footer--bottom__list__item_4 {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  border: 2px solid #fff;
+  padding: 7px 25px;
+  color: #fff;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.footer--bottom__list__item_1 {
+  margin-right: 80px;
+  cursor: pointer;
+}
+
+.footer__hr {
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.8274509804);
+  margin-top: 36px;
+}
+
+.footer--end__list {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-left: 458px;
+  margin-top: 36px;
+  font-size: 15px;
+  color: #fff;
+}
+
 .header {
   background-color: black;
   height: 80px;
@@ -105,7 +213,8 @@ button {
   gap: 5px;
 }
 .header .container .header__list .dropdown__icon_2 {
-  margin-top: 20px;
+  margin-top: 5px;
+  margin-left: 5px;
 }
 .header .container .header__list .location__icon {
   margin-top: 9px;
@@ -126,6 +235,96 @@ button {
 
 .language__icon {
   margin-left: 20px;
+}
+
+.dropdown-toggle {
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  outline: none;
+}
+
+.dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu:hover {
+  display: block;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  transition: all 1s ease;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 335px;
+  height: 570px;
+  margin-left: -45px;
+  margin-top: 20px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  background-color: #fff;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  font-size: 14px;
+  line-height: auto;
+  color: #8e8989;
+  transition: all 1s ease;
+}
+
+.dropdown__main {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.dropdown__link__hover {
+  line-height: auto;
+  color: #8e8989;
+  display: flex;
+  gap: 100px;
+}
+
+.dropdown__heading {
+  font-size: 18px;
+  font-weight: bold;
+  color: #000;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  width: 309px;
+  transition: all 0.4s ease;
+}
+
+.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+.item__bold {
+  font-weight: bold;
+  color: #000;
+  font-size: 20px;
+}
+
+.dropdown__head {
+  height: 50px;
+  background-color: #283D56;
+  margin-left: -20px;
+  margin-right: -20px;
+  width: 335px;
+  margin-top: -10px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding-left: 20px;
 }
 
 .hero {
@@ -319,4 +518,45 @@ button {
 
 .baby {
   margin-top: 20px;
+}
+
+.sign {
+  margin-bottom: 100px;
+}
+.sign .container {
+  height: 78px;
+  background-color: #fff;
+  padding-top: 7px;
+}
+.sign .container .sign__desc1, .sign .container .sign__desc2 {
+  font-size: 15px;
+  font-weight: 500;
+  text-align: center;
+  font-weight: 400;
+}
+.sign .container .sign__btn {
+  padding: 9px 83px;
+  border: none;
+  background-color: #ffc700;
+  color: #000;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 5px;
+  display: block;
+  margin: 0 auto;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.sign .container .sign__btn:hover {
+  background-color: #fff;
+  color: #ffc700;
+  border: 3px solid #ffc700;
+  transition: all 0.3s ease;
+}
+.sign .container .sign__btn:active {
+  opacity: 0.3;
+  transition: all 0.3s ease;
+}
+.sign .container .sign__span {
+  color: #0038FF;
 }/*# sourceMappingURL=main.css.map */
